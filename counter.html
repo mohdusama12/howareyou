@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: darkgreen;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            
+        }
+        .inc{
+        margin: 0px;
+        padding: 50px;
+        font-size: 50px;
+        font-weight: bold;
+        color:green;
+        
+        }
+    #counting{
+        display: flex;
+        justify-content: center;
+        font-size: 100px;
+        font-weight: bold;
+        color: aqua;
+        }
+        
+            
+            
+        
+    </style>
+</head>
+<body>
+   <div id="counter">
+    <button class="inc"onclick="myfunction()">+</button>
+    <h1 id="counting">0</h1>
+    <button class="inc"onclick="myfunctio()">-</button>
+</div>
+</body>
+<script>
+      var data=0;
+     let a= document.getElementById("counting");
+
+    function myfunction(){
+     data=data+1;
+   a.innerHTML=data;
+    }
+   
+    function myfunctio(){
+     
+     if(data>0){
+         data=data-1;
+     }
+     a.innerHTML=data;
+    
+    }
+    
+</script>
+</html>
